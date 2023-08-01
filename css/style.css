@@ -153,8 +153,6 @@ img {
 div > h3 {
 font-family: 'Lato';
 font-size: 14px;
-font-weight: 400px;
-
 text-align: left;
 
 }
@@ -171,12 +169,15 @@ p {
 }
 
 .format2 {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 10px;
+    font-weight: bold;
 }
 
 .format3 {
     color:#B6116E;
+    font-weight: bold;
+    font-size: 10px;
 }
 
 
