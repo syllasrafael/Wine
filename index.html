@@ -10,8 +10,8 @@
 
 <body>
     <header>
-        <div class="container">
-            <div class="container"><img src="assets/icon/Wine logo.svg" alt="LogoWine">
+        <div>
+            <div class="container"><img class="logo" src="assets/icon/Wine logo.svg" alt="LogoWine">
                 <nav>
                     <ul>
                         <li><a href="#">Clube</a></li>
@@ -21,10 +21,12 @@
                         <li><a href="#">Eventos</a></li>
                     </ul>
                 </nav>
-            </div>
-
-
-            <div class="logo"><a href=""><img src="assets/icon/Ícone.svg" alt="icon"></a></div>
+                <div class="icone-svg">
+                    <a href="#">
+                        <img src="assets/icon/Ícone.svg" alt="icon">
+                    </a>
+                </div>
+            </div> 
         </div>
 
     </header>
@@ -32,46 +34,53 @@
     <main>
 
         <div class="banner">
-            <img src="assets/img/Banner.svg" usemap="#image-map" alt="followinst">
-
+          
+            <picture>
+                <source media="(max-width: 780px )" srcset="assets/img/BannerMobile.png" type="image/jpg">
+                <img src="assets/img/Banner.png" alt="Irina irina-blok">
+            </picture>
             <map name="image-map">
                 <area target="_blank" alt="followInst" title="followInst"
                     href="https://www.instagram.com/syllas_rafael/" coords="1051,296,829,246" shape="rect">
             </map>
         </div>
 
-        <div class="blocogeral">
-            <div class="vinho">
-                <img src="assets/img/winebotle.svg" alt="vinho">
-                <div class="inforvinho">
-                    <h3>Bacalhôa Meia Pipa <br>Private Selection <br> Castelão Syrah 2014</h3>
-                    <p class="format1"><del>R$ 37,40</del></p>
-                    <p class="format2">Sócio Wine</p>
-                    <p class="format3">R$ 30,00</p>
-                    <button type="button" class="grupobtn">Adicionar</button>
-                </div>
-            </div>
-            <div class="vinho">
-                <img src="assets/img/winebotle.svg" alt="vinho">
-                <div class="inforvinho">
-                    <h3><b>Bacalhôa Meia Pipa <br>Private Selection <br> Castelão Syrah 2014</b></h3>
-                    <div>
+        <div class="margin-top-bottom">
+            <div class="row">
+                <div class="vinho">
+                        
+                        <img src="assets/img/winebotle.svg" alt="vinho">
+            
+                    <div class="inforvinho">
+                        <h3>Bacalhôa Meia Pipa <br>Private Selection <br> Castelão Syrah 2014</h3>
                         <p class="format1"><del>R$ 37,40</del></p>
                         <p class="format2">Sócio Wine</p>
-                        <p class="format3">R$ <strong>30</strong>,00</p>
+                        <p class="format3">R$ <span>30</span>,00</p>
+                        <button type="button" class="btn">Adicionar</button>
                     </div>
-
-                    <button type="button" value="Adicionar" class="grupobtn">Adicionar</button>
-
-
                 </div>
-            </div>
-            <div class="vinho">
-                <img src="assets/img/winebotle.svg" alt="vinho">
-                <div id="inforvinho2">
-                    <h3>Bacalhôa Meia Pipa <br>Private Selection <br> Castelão Syrah 2014</h3>
-                    <button type="button" id="grupobtn2">Esgotado</button>
+                <button type="button" class="btn btn-mobile">Adicionar</button>
+                <div class="vinho">
+                    <img src="assets/img/winebotle.svg" alt="vinho">
+                    <div class="inforvinho">
+                        <h3><b>Bacalhôa Meia Pipa <br>Private Selection <br> Castelão Syrah 2014</b></h3>
+                        <div>
+                            <p class="format1"><del>R$ 37,40</del></p>
+                            <p class="format2">Sócio Wine</p>
+                            <p class="format3">R$ <span>30</span>,00</p>
+                        </div>
+                        <button type="button" value="Adicionar" class="btn">Adicionar</button>
+                    </div>
                 </div>
+                <button type="button" class="btn btn-mobile">Adicionar</button>
+                <div class="vinho">
+                    <img src="assets/img/winebotle.svg" alt="vinho">
+                    <div id="inforvinho2">
+                        <h3>Bacalhôa Meia Pipa <br>Private Selection <br> Castelão Syrah 2014</h3>
+                        <button type="button" class="btn btn-secondary">Esgotado</button>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-secondary btn-mobile">Esgotado</button>
             </div>
         </div>
 
